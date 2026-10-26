@@ -32,7 +32,7 @@ No shopping trip, no location features - just your pantry and your recipes.
 
 ## Database choice: SQLite (SQLiteOpenHelper)
 
-This app uses **SQLite via `SQLiteOpenHelper`**, implemented locally on-device.
+This app uses **SQLite via SQLiteOpenHelper**, implemented locally on-device.
 
 **Why SQLite?**
 
@@ -42,19 +42,19 @@ This app uses **SQLite via `SQLiteOpenHelper`**, implemented locally on-device.
   app fully offline and in scope with the brief (no location/cloud needed).
 
 
-Schema (see `DatabaseHelper.java`):
+Schema (see DatabaseHelper.java):
 
 | Table | Purpose |
 |-------|---------|
-| `pantry_items` | What the user owns - full CRUD |
-| `recipes` | Seeded recipe collection |
-| `recipe_ingredients` | Ingredients each recipe requires (FK to `recipes`) |
+| pantry_items | What the user owns - full CRUD |
+| recipes | Seeded recipe collection |
+| recipe_ingredients | Ingredients each recipe requires (FK to recipes) |
 
 ---
 
 ## Project structure
 
-```
+
 app/src/main/java/com/example/smartpantry/
   MainActivity.java                 host activity + bottom navigation
   model/   PantryItem, Ingredient, Recipe
@@ -64,17 +64,17 @@ app/src/main/java/com/example/smartpantry/
   ui/recipes/   SuggestedRecipesFragment, RecipeAdapter, RecipeDetailActivity
   ui/settings/  SettingsFragment
 app/src/test/java/...  RecipeMatcherTest (unit tests for the core rule)
-```
+
 
 ### Screens (5 total)
 
 1. **Pantry List** - RecyclerView of all ingredients (home tab).
 2. **Add / Edit Ingredient** - form with input validation (separate Activity,
-   reached via an `Intent`).
+   reached via an Intent).
 3. **Suggested Recipes** - runs the strict-matching rule.
 4. **Recipe Detail** - full ingredients + method (separate Activity, data passed
-   via an `Intent` extra).
-5. **Settings** - preferences (`PreferenceFragmentCompat`).
+   via an Intent extra).
+5. **Settings** - preferences (PreferenceFragmentCompat).
 
 ---
 
@@ -83,7 +83,7 @@ app/src/test/java/...  RecipeMatcherTest (unit tests for the core rule)
 **Requirements:** Android Studio (Giraffe/Hedgehog or newer), Android SDK 34,
 JDK 17.
 
-1. Open Android Studio -> **Open** -> select the `SmartPantryManager` folder.
+1. Open Android Studio -> **Open** -> select the SmartPantryManager folder.
 2. Let Gradle sync (Android Studio will download the Gradle wrapper/distribution
    automatically on first sync).
 3. Choose an emulator (or a connected device, API 24+) and press **Run**.
@@ -93,7 +93,7 @@ JDK 17.
 **Run the unit tests** (no device needed):
 
 ```
-./gradlew test
+
 ```
 
 ---
