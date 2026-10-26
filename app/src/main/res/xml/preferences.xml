@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settings_alerts">
+
+        <SwitchPreferenceCompat
+            app:key="expiring_soon_alerts"
+            app:defaultValue="false"
+            app:title="@string/settings_expiring_title"
+            app:summary="@string/settings_expiring_summary" />
+
+        <SwitchPreferenceCompat
+            app:key="show_almost_there"
+            app:defaultValue="false"
+            app:title="@string/settings_almost_title"
+            app:summary="@string/settings_almost_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_prefs">
+
+        <ListPreference
+            app:key="units_preference"
+            app:defaultValue="metric"
+            app:title="@string/settings_units_title"
+            app:entries="@array/unit_system_labels"
+            app:entryValues="@array/unit_system_values"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

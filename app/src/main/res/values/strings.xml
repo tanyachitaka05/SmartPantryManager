@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Smart Pantry Manager</string>
+
+    <!-- navigation -->
+    <string name="nav_pantry">Pantry</string>
+    <string name="nav_suggested">Recipes</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- pantry -->
+    <string name="pantry_title">My Pantry</string>
+    <string name="pantry_empty">Your pantry is empty.\nTap + to add your first ingredient.</string>
+    <string name="add_item">Add ingredient</string>
+    <string name="delete">Delete</string>
+
+    <!-- add / edit -->
+    <string name="title_add_edit">Add / Edit Ingredient</string>
+    <string name="label_name">Ingredient name</string>
+    <string name="hint_name">e.g. Tomatoes</string>
+    <string name="label_qty">Quantity</string>
+    <string name="hint_qty">e.g. 3</string>
+    <string name="label_unit">Unit</string>
+    <string name="label_expiry">Expiry date (optional)</string>
+    <string name="hint_expiry">yyyy-MM-dd</string>
+    <string name="save">Save</string>
+
+    <!-- suggested -->
+    <string name="suggested_title">Suggested Recipes</string>
+    <string name="suggested_empty">No recipes match your pantry yet - add more ingredients.</string>
+    <string name="almost_title">Almost There (missing 1)</string>
+
+    <!-- detail -->
+    <string name="title_recipe_detail">Recipe</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="method">Method</string>
+
+    <!-- settings -->
+    <string name="settings_alerts">Alerts</string>
+    <string name="settings_prefs">Preferences</string>
+    <string name="settings_expiring_title">Expiring-soon alerts</string>
+    <string name="settings_expiring_summary">Highlight ingredients that are near their expiry date.</string>
+    <string name="settings_almost_title">Show \"Almost There\" list</string>
+    <string name="settings_almost_summary">Also show recipes you could make if you had one more ingredient.</string>
+    <string name="settings_units_title">Preferred unit system</string>
+</resources>
