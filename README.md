@@ -4,7 +4,7 @@ A native **Java** Android application that helps you cut food waste by suggestin
 recipes you can cook using **strictly** the ingredients you already have at home.
 No shopping trip, no location features - just your pantry and your recipes.
 
-> Built for the Mobile App Development 700 practical assignment.
+
 
 ---
 
@@ -37,12 +37,10 @@ This app uses **SQLite via `SQLiteOpenHelper`**, implemented locally on-device.
 **Why SQLite?**
 
 - The app's data (pantry items and recipes) is private, structured and
-  relational - a perfect fit for a local relational store.
+  relational a perfect fit for a local relational store.
 - It needs **zero network access and zero external accounts**, which keeps the
   app fully offline and in scope with the brief (no location/cloud needed).
-- It is exactly the persistence approach covered in the module's persistent-data
-  chapter, so every line can be explained and defended.
-- It persists automatically between sessions with no extra configuration.
+
 
 Schema (see `DatabaseHelper.java`):
 
@@ -100,16 +98,6 @@ JDK 17.
 
 ---
 
-## Out of scope (by design)
 
-No Google Maps / mapping SDK, no GPS/location, no payments, no Play Store
-publishing. The app requests **no INTERNET and no location permissions**.
 
 ---
-
-## Try the strict-matching rule
-
-1. Add `Eggs` (qty 3, pcs) and `Tomatoes` (qty 2, pcs) to your pantry.
-2. Open *Recipes* -> **Tomato & Egg Scramble** appears (you have everything).
-3. Delete `Tomatoes` -> the recipe disappears from the list.
-4. Re-add `Tomatoes` -> it comes back. That is the core business logic working.
